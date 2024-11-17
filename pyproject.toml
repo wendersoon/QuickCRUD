@@ -1,9 +1,16 @@
 [tool.poetry]
 name = "quickcrud"
 version = "0.1.0"
-description = ""
+description = "CLI to automatically generate FastAPI APIs from a SQL schema."
 authors = ["Wenderson <ds.wendersonmelo@gmail.com>"]
+license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/wendersoon/QuickCRUD"
+repository = "https://github.com/wendersoon/QuickCRUD"
+keywords = ["fastapi", "crud", "sql", "docker"]
+
+[tool.poetry.scripts]
+quickcrud = "quickcrud.cli:generate"
 
 [tool.poetry.dependencies]
 python = "^3.12"
