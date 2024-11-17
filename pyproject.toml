@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "quickcrud"
+version = "0.1.0"
+description = ""
+authors = ["Wenderson <ds.wendersonmelo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+sqlparse = "^0.5.2"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.0"
+sqlalchemy = "^2.0.36"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pre-commit = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[settings]
+known_third_party = ["pytest", "requests"]
+[tool.black]
+line-length = 79
+[tool.isort]
+profile = "black"

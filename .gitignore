@@ -1,0 +1,32 @@
+# Dependências e ambientes virtuais
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+.mypy_cache/
+.pytest_cache/
+
+# Arquivos gerados pelo Poetry
+poetry.lock
+
+# Configurações do editor/IDE
+.idea/
+.vscode/
+*.swp
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e caches
+*.log
+*.cache
+.cache/
+
+# Docker e afins
+docker-compose.override.yml
+.env
